@@ -62,11 +62,27 @@ pnpm install --global sanity@3
 npx create sanity@3 init --env
 ```
 
+After running the command, you will be prompted to configure your project:
+- Create a new new project
+- Set your project name: i.e. `My Portfolio`
+- Use Use the default dataset configuration? `Yes`
+- Would you like to add configuration files for a Sanity project in this Next.js folder? `No`
+
+<Warning>Ensure that you select `no` when asked if you would like add config files for your Sanity project</Warning>
+
 <video
   controls
   className="w-full aspect-video"
   src="https://craftedwebtemplates.s3.amazonaws.com/add+project+sanity.mp4"
 ></video>
+
+### Step 6. Create sanity api read token
+
+- Copy `SANITY_API_READ_TOKEN` from `.env.lcoal.example` file into the `.env` file
+- Navigate to your [Sanity Projects](https://www.sanity.io/manage/personal/projects) and click on your new project
+- Click on the API tab and then Tokens
+- Create a new API token, i.e. `viewer`
+- Copy the API token generated and set it to the  `SANITY_API_READ_TOKEN` in your `.env` file.
 
 <video
   controls
